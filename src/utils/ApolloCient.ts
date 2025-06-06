@@ -4,7 +4,7 @@ const apiUrl = import.meta.env.VITE_GRAPHQL_API_URL || '';
 console.log(apiUrl, 'apiUrl');
 // 创建 Apollo Client 实例
 export const client = new ApolloClient({
-	uri: `${apiUrl}/graphql`,
+	uri: `https://deepseek-ai-worker.nevermoyan.workers.dev/graphql`,
 	cache: new InMemoryCache(),
 	defaultOptions: {
 		watchQuery: {
